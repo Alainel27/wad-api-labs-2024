@@ -10,6 +10,7 @@ const SignUpPage = props => {
   const [registered, setRegistered] = useState(false);
 
   const register = () => {
+    //must have one capital letter one lower case one number and one special character
     let passwordRegEx = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
     const validPassword = passwordRegEx.test(password);
 
